@@ -31,8 +31,9 @@ fun Screen1(navController: NavHostController) {
 
             Text(text = "Screen 1")
             Button(onClick = {navController.navigate(Destination.ScreenSecond.route)}) {
-                Text(text = "Next")
+               Text(text = "Next")
             }
+
 
         }
     }
