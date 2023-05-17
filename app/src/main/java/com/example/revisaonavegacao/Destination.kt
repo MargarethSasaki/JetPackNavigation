@@ -1,12 +1,6 @@
 package com.example.revisaonavegacao
 
-sealed class Destination{
-
+sealed class Destination(var route: String){
 
 }
 
-class Pessoa(val name: string)
-
-class Pessoa{
-    Pessoa(String nome)
-}
