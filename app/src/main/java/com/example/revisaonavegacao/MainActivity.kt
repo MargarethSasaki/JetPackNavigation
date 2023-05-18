@@ -22,7 +22,13 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    NavHost(navController = navController, startDestination = Destination.ScreenFirst.route) {
+                        composable(Destination.ScreenFirst.route) { Screen1(navController) }
+                        composable(Destination.ScreenSecond.route) { Screen2(navController) }
+                        composable(Destination.ScreenThird.route) { Screen3(navController) }
+                        composable(Destination.ScreenFourth.route) { Screen4(navController) }
+                        composable(Destination.ScreenFive.route) { Screen5(navController) }
+                    }
                 }
             }
         }
